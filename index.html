@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e69d9a7e4849e66e541a4198d1d92b60 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e69d9a7e4849e66e541a4198d1d92b60" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e69d9a7e4849e66e541a4198d1d92b60 = L.map(
+                "map_e69d9a7e4849e66e541a4198d1d92b60",
+                {
+                    center: [32.5, 34.8],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 8,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_585f7e5e1a8d255cb14c3891a8141c7f = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_585f7e5e1a8d255cb14c3891a8141c7f.addTo(map_e69d9a7e4849e66e541a4198d1d92b60);
+        
+    
+            var marker_c3a635322c7bbefa91f562ad5d39e52d = L.marker(
+                [32.0853, 34.7818],
+                {
+}
+            ).addTo(map_e69d9a7e4849e66e541a4198d1d92b60);
+        
+    
+            var icon_87d1e403f18eee814ea43eaa9499c425 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "heart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_757069ca38fa41111ac0cd3c16de3b14 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d7b38dfa789e138f4d164a9a01841be6 = $(`<div id="html_d7b38dfa789e138f4d164a9a01841be6" style="width: 100.0%; height: 100.0%;">     <div style="font-family: 'Arial', sans-serif; direction: rtl; text-align: right; width: 200px;">         <h4 style="margin-bottom: 5px; color: #e63946;">הדייט הראשון</h4>         <img src="https://via.placeholder.com/150" alt="הדייט הראשון" style="width:100%; border-radius: 5px; margin-bottom: 5px;">         <p style="font-size: 13px; line-height: 1.4;">כאן הכל התחיל...</p>         <hr style="border: 0.5px solid #eee;">         <p style="font-size: 11px; color: gray;">קואורדינטות: 32.0853, 34.7818</p>     </div>     </div>`)[0];
+                popup_757069ca38fa41111ac0cd3c16de3b14.setContent(html_d7b38dfa789e138f4d164a9a01841be6);
+            
+        
+
+        marker_c3a635322c7bbefa91f562ad5d39e52d.bindPopup(popup_757069ca38fa41111ac0cd3c16de3b14)
+        ;
+
+        
+    
+    
+            marker_c3a635322c7bbefa91f562ad5d39e52d.bindTooltip(
+                `<div>
+                     הדייט הראשון
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c3a635322c7bbefa91f562ad5d39e52d.setIcon(icon_87d1e403f18eee814ea43eaa9499c425);
+            
+    
+            var marker_0af5360c9e6fbbbc3f540de4e66d450d = L.marker(
+                [32.1643, 34.8447],
+                {
+}
+            ).addTo(map_e69d9a7e4849e66e541a4198d1d92b60);
+        
+    
+            var icon_c23903ed0ca2b83a69398c1f5601c96b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "heart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_19a0a3565831ba0425ac65eefdf45359 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_226e38c0f151186b04d8f20faa1d9a92 = $(`<div id="html_226e38c0f151186b04d8f20faa1d9a92" style="width: 100.0%; height: 100.0%;">     <div style="font-family: 'Arial', sans-serif; direction: rtl; text-align: right; width: 200px;">         <h4 style="margin-bottom: 5px; color: #e63946;">הנשיקה הראשונה</h4>                  <p style="font-size: 13px; line-height: 1.4;">רגע שלא אשכח.</p>         <hr style="border: 0.5px solid #eee;">         <p style="font-size: 11px; color: gray;">קואורדינטות: 32.1643, 34.8447</p>     </div>     </div>`)[0];
+                popup_19a0a3565831ba0425ac65eefdf45359.setContent(html_226e38c0f151186b04d8f20faa1d9a92);
+            
+        
+
+        marker_0af5360c9e6fbbbc3f540de4e66d450d.bindPopup(popup_19a0a3565831ba0425ac65eefdf45359)
+        ;
+
+        
+    
+    
+            marker_0af5360c9e6fbbbc3f540de4e66d450d.bindTooltip(
+                `<div>
+                     הנשיקה הראשונה
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0af5360c9e6fbbbc3f540de4e66d450d.setIcon(icon_c23903ed0ca2b83a69398c1f5601c96b);
+            
+    
+            var marker_f85bab23d18d3807a1dbae44e2572abc = L.marker(
+                [32.9812, 35.5123],
+                {
+}
+            ).addTo(map_e69d9a7e4849e66e541a4198d1d92b60);
+        
+    
+            var icon_0a650e633745502fb198a7db3fcc4cc5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "heart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0faf8a254f60d083bd5586f14883fc43 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_383cd214d6883ae332a8f4a687d86dea = $(`<div id="html_383cd214d6883ae332a8f4a687d86dea" style="width: 100.0%; height: 100.0%;">     <div style="font-family: 'Arial', sans-serif; direction: rtl; text-align: right; width: 200px;">         <h4 style="margin-bottom: 5px; color: #e63946;">חגיגות חצי שנה</h4>                  <p style="font-size: 13px; line-height: 1.4;">התחנה הבאה שלנו!</p>         <hr style="border: 0.5px solid #eee;">         <p style="font-size: 11px; color: gray;">קואורדינטות: 32.9812, 35.5123</p>     </div>     </div>`)[0];
+                popup_0faf8a254f60d083bd5586f14883fc43.setContent(html_383cd214d6883ae332a8f4a687d86dea);
+            
+        
+
+        marker_f85bab23d18d3807a1dbae44e2572abc.bindPopup(popup_0faf8a254f60d083bd5586f14883fc43)
+        ;
+
+        
+    
+    
+            marker_f85bab23d18d3807a1dbae44e2572abc.bindTooltip(
+                `<div>
+                     חגיגות חצי שנה
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f85bab23d18d3807a1dbae44e2572abc.setIcon(icon_0a650e633745502fb198a7db3fcc4cc5);
+            
+    
+            var marker_928831d4237305420cf7cfcd03a0cbb1 = L.marker(
+                [32.119177, 34.821454],
+                {
+}
+            ).addTo(map_e69d9a7e4849e66e541a4198d1d92b60);
+        
+    
+            var icon_0746814ef9840eb2dc4c52d52cc365b8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "heart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_54159f580c8bbb9556902f2e2e27df1a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_daf2aec32649fca24524592f3bd843dd = $(`<div id="html_daf2aec32649fca24524592f3bd843dd" style="width: 100.0%; height: 100.0%;">     <div style="font-family: 'Arial', sans-serif; direction: rtl; text-align: right; width: 200px;">         <h4 style="margin-bottom: 5px; color: #e63946;">ממסאג' לנשיקה</h4>                  <p style="font-size: 13px; line-height: 1.4;">היה מסאג' נחמד אבל לדעתי הנשיקה הייתה הרבה יותר שווה</p>         <hr style="border: 0.5px solid #eee;">         <p style="font-size: 11px; color: gray;">קואורדינטות: 32.119177, 34.821454</p>     </div>     </div>`)[0];
+                popup_54159f580c8bbb9556902f2e2e27df1a.setContent(html_daf2aec32649fca24524592f3bd843dd);
+            
+        
+
+        marker_928831d4237305420cf7cfcd03a0cbb1.bindPopup(popup_54159f580c8bbb9556902f2e2e27df1a)
+        ;
+
+        
+    
+    
+            marker_928831d4237305420cf7cfcd03a0cbb1.bindTooltip(
+                `<div>
+                     ממסאג' לנשיקה
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_928831d4237305420cf7cfcd03a0cbb1.setIcon(icon_0746814ef9840eb2dc4c52d52cc365b8);
+            
+</script>
+</html>
