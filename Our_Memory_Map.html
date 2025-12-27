@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_439e715e43b0586221326bf0456aa1de {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_439e715e43b0586221326bf0456aa1de" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_439e715e43b0586221326bf0456aa1de = L.map(
+                "map_439e715e43b0586221326bf0456aa1de",
+                {
+                    center: [32.410266666666665, 35.04626666666667],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 10,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5676c9c76416fe9be9289296399fbe46 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_5676c9c76416fe9be9289296399fbe46.addTo(map_439e715e43b0586221326bf0456aa1de);
+        
+    
+            var marker_277a0ded6c7d517c18f556b965e3029b = L.marker(
+                [32.0853, 34.7818],
+                {
+}
+            ).addTo(map_439e715e43b0586221326bf0456aa1de);
+        
+    
+            var icon_41a6b145a0c9c370912967dd47568c3b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "heart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c7e2bd6e026d152aa651dc7833041cc2 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7429056614b57afb5560b123df0a018f = $(`<div id="html_7429056614b57afb5560b123df0a018f" style="width: 100.0%; height: 100.0%;">     <div style="font-family: 'Arial', sans-serif; direction: rtl; text-align: right; width: 200px;">         <h4 style="margin-bottom: 5px; color: #e63946;">הדייט הראשון</h4>         <img src="https://via.placeholder.com/150" alt="הדייט הראשון" style="width:100%; border-radius: 5px; margin-bottom: 5px;">         <p style="font-size: 13px; line-height: 1.4;">כאן הכל התחיל... לא הפסקנו לדבר שעות.</p>         <hr style="border: 0.5px solid #eee;">         <p style="font-size: 11px; color: gray;">קואורדינטות: 32.0853, 34.7818</p>     </div>     </div>`)[0];
+                popup_c7e2bd6e026d152aa651dc7833041cc2.setContent(html_7429056614b57afb5560b123df0a018f);
+            
+        
+
+        marker_277a0ded6c7d517c18f556b965e3029b.bindPopup(popup_c7e2bd6e026d152aa651dc7833041cc2)
+        ;
+
+        
+    
+    
+            marker_277a0ded6c7d517c18f556b965e3029b.bindTooltip(
+                `<div>
+                     לחצי כאן לזיכרון
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_277a0ded6c7d517c18f556b965e3029b.setIcon(icon_41a6b145a0c9c370912967dd47568c3b);
+            
+    
+            var marker_c28cab149967e707d3603e4842c70a48 = L.marker(
+                [32.1643, 34.8447],
+                {
+}
+            ).addTo(map_439e715e43b0586221326bf0456aa1de);
+        
+    
+            var icon_15df771a5507c28e51fdbfaa6af21742 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "heart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_36adbde40c37810e80d1e1e64158b0e1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8524a55bd115b2cc8f079c6b2acfa634 = $(`<div id="html_8524a55bd115b2cc8f079c6b2acfa634" style="width: 100.0%; height: 100.0%;">     <div style="font-family: 'Arial', sans-serif; direction: rtl; text-align: right; width: 200px;">         <h4 style="margin-bottom: 5px; color: #e63946;">הנשיקה הראשונה</h4>         <img src="https://via.placeholder.com/150" alt="הנשיקה הראשונה" style="width:100%; border-radius: 5px; margin-bottom: 5px;">         <p style="font-size: 13px; line-height: 1.4;">בערב קריר של דצמבר, רגע שלא אשכח.</p>         <hr style="border: 0.5px solid #eee;">         <p style="font-size: 11px; color: gray;">קואורדינטות: 32.1643, 34.8447</p>     </div>     </div>`)[0];
+                popup_36adbde40c37810e80d1e1e64158b0e1.setContent(html_8524a55bd115b2cc8f079c6b2acfa634);
+            
+        
+
+        marker_c28cab149967e707d3603e4842c70a48.bindPopup(popup_36adbde40c37810e80d1e1e64158b0e1)
+        ;
+
+        
+    
+    
+            marker_c28cab149967e707d3603e4842c70a48.bindTooltip(
+                `<div>
+                     לחצי כאן לזיכרון
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c28cab149967e707d3603e4842c70a48.setIcon(icon_15df771a5507c28e51fdbfaa6af21742);
+            
+    
+            var marker_e203359004424817f6332069f6cb7624 = L.marker(
+                [32.9812, 35.5123],
+                {
+}
+            ).addTo(map_439e715e43b0586221326bf0456aa1de);
+        
+    
+            var icon_6d88b454225a2032e43c994097173d38 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "heart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4087be11ab17625d919131fe739dfba5 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1a50c2a9916da19429db029cb277981b = $(`<div id="html_1a50c2a9916da19429db029cb277981b" style="width: 100.0%; height: 100.0%;">     <div style="font-family: 'Arial', sans-serif; direction: rtl; text-align: right; width: 200px;">         <h4 style="margin-bottom: 5px; color: #e63946;">חגיגות חצי שנה</h4>         <img src="https://via.placeholder.com/150" alt="חגיגות חצי שנה" style="width:100%; border-radius: 5px; margin-bottom: 5px;">         <p style="font-size: 13px; line-height: 1.4;">התחנה הבאה בסיפור שלנו!</p>         <hr style="border: 0.5px solid #eee;">         <p style="font-size: 11px; color: gray;">קואורדינטות: 32.9812, 35.5123</p>     </div>     </div>`)[0];
+                popup_4087be11ab17625d919131fe739dfba5.setContent(html_1a50c2a9916da19429db029cb277981b);
+            
+        
+
+        marker_e203359004424817f6332069f6cb7624.bindPopup(popup_4087be11ab17625d919131fe739dfba5)
+        ;
+
+        
+    
+    
+            marker_e203359004424817f6332069f6cb7624.bindTooltip(
+                `<div>
+                     לחצי כאן לזיכרון
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e203359004424817f6332069f6cb7624.setIcon(icon_6d88b454225a2032e43c994097173d38);
+            
+    
+            L.control.fullscreen(
+                {
+  "position": "topleft",
+  "title": "Full Screen",
+  "titleCancel": "Exit Full Screen",
+  "forceSeparateButton": false,
+}
+            ).addTo(map_439e715e43b0586221326bf0456aa1de);
+        
+    
+            var locate_control_2c57e2313f2356dc9ec9cb62c4fbd902 = L.control.locate(
+                {}
+            ).addTo(map_439e715e43b0586221326bf0456aa1de);
+            
+        
+</script>
+</html>
